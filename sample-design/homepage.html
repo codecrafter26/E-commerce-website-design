@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+    .newsletter-button {
+      background: linear-gradient(90deg, #ff7a18, #af002d);
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+    .newsletter-button:hover {
+      transform: scale(1.1);
+      background: #af002d;
+    }
+    .newsletter-input {
+      border-radius: 0;
+    }
+    .hero-section {
+/*      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?shopping,ecommerce') no-repeat center center/cover;*/
+      background: url('./assets/images_1.jpeg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+    }
+    .icon-box {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .icon-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .testimonial {
+      background-color: #f8f9fa;
+      padding: 50px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Company Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a href="login.html" class="btn  btn-primary shadow rounded-pill px-5">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center bg-primary text-white py-5">
+      <div class="container">
+         <h1 class="display-4 fw-bold">Welcome to Our Store</h1>
+         <p class="lead">Discover the best products tailored for your needs.</p>
+      </div>
+    </section>
+    <!-- <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Our Store</h1>
+            <p class="lead">Discover the best products tailored for your needs.</p>
+        </div>
+    </header> -->
+
+    <!-- Product Gallery -->
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="card shadow-sm">
+                    <img src="assets/images (3).jpeg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">High-quality product with detailed specifications.</p>
+                        <a href="product.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card shadow-sm">
+                    <img src="./assets/images (4).jpeg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">High-quality product with detailed specifications.</p>
+                        <a href="product.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="card shadow-sm">
+                    <img src="assets/images (5).jpeg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">High-quality product with detailed specifications.</p>
+                        <a href="product.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="card shadow-sm">
+                    <img src="assets/images (6).jpeg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 4</h5>
+                        <p class="card-text">High-quality product with detailed specifications.</p>
+                        <a href="product.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card shadow-sm">
+                    <img src="assets/images (1).jpeg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 5</h5>
+                        <p class="card-text">High-quality product with detailed specifications.</p>
+                        <a href="product.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="card shadow-sm">
+                    <img src="assets/images (2).jpeg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 6</h5>
+                        <p class="card-text">High-quality product with detailed specifications.</p>
+                        <a href="product.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div><br><br>
+        <!-- About Section -->
+        <section class="py-5">
+          <div class="container text-center">
+            <h2 class="fw-bold">Why Choose Us?</h2>
+            <p class="text-muted">Experience the best in online shopping with our carefully curated features.</p>
+            <div class="row mt-4">
+              <div class="col-md-4" data-aos="flip-left">
+                <div class="icon-box p-4 border rounded">
+                  <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                  <h5 class="fw-bold">Fast Delivery</h5>
+                  <p>Get your products delivered to your doorstep in no time with our reliable shipping services.</p>
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">>
+                <div class="icon-box p-4 border rounded">
+                  <i class="fas fa-award fa-3x text-warning mb-3"></i>
+                  <h5 class="fw-bold">Premium Quality</h5>
+                  <p>We partner with trusted brands to ensure you only receive the best products available.</p>
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="flip-right" data-aos-delay="400">
+                <div class="icon-box p-4 border rounded">
+                  <i class="fas fa-headset fa-3x text-success mb-3"></i>
+                  <h5 class="fw-bold">24/7 Support</h5>
+                  <p>Our dedicated team is always ready to assist you with       any inquiries or issues.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="py-5">
+          <div class="container text-center">
+            <h2 class="fw-bold">What Our Customers Say</h2>
+            <p class="text-muted">Hear from our satisfied customers.</p>
+            <div class="row mt-4">
+              <div class="col-md-4" data-aos="fade-right">
+                <div class="testimonial p-4">
+                  <p>"The products are amazing, and the service is exceptional. I'm a regular customer now!"</p>
+                  <h6 class="fw-bold">- Sarah K.</h6>
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-up">
+                <div class="testimonial p-4">
+                  <p>"Fast shipping and high-quality items. I highly recommend this platform!"</p>
+                  <h6 class="fw-bold">- Michael R.</h6>
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-left">
+                <div class="testimonial p-4">
+                  <p>"Fantastic experience! The support team helped me every step of the way."</p>
+                  <h6 class="fw-bold">- Emma T.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section><br><br>
+        <h3 class="text-body-emphasis text-center">Working Days</h3>
+        <p class="lead text-body-secondary text-center">We all thanks you for to choose our products</p>
+        <br>
+        <div class="w-auto p-3" style="display: flex; justify-content: center;">
+                    <ol class="list-group list-group-numbered w-75 p-3">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Monday</div>
+                We are open on Monday
+              </div>
+              <span class="">open</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Tuesday</div>
+                We are open on Tuesday
+              </div>
+              <span class="">open</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Wendsday</div>
+                We are open on Wendsday
+              </div>
+              <span class="">open</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Thursday</div>
+                We are open on Thursday
+              </div>
+              <span class="">open</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Friday</div>
+                We are open on Friday
+              </div>
+              <span class="">open</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Saturday</div>
+                We are open on Saturday
+              </div>
+              <span class="">open</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Sunday</div>
+                We are closed on Sunday
+              </div>
+              <span class="">closed</span>
+            </li>
+        </ol>
+        </div>
+    </main>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold mb-4 text-warning">Your Logo</h5>
+          <p>
+            Build your dream website with us. Offering professional services to make your vision a reality.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold mb-4 text-warning">Quick Links</h5>
+          <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="#" class="text-white text-decoration-none">About</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Services</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold mb-4 text-warning">Resources</h5>
+          <p><a href="#" class="text-white text-decoration-none">Documentation</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Support</a></p>
+          <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="text-uppercase fw-bold mb-4 text-warning">Subscribe to Updates</h5>
+          <form action="subscribe.php" method="POST">
+            <div class="input-group mb-3">
+              <input type="email" name="email" class="form-control newsletter-input" placeholder="Enter your email" required>
+              <button type="submit" class="btn newsletter-button">Subscribe</button>
+            </div>
+          </form>
+          <p>Get the latest updates directly to your inbox!</p>
+        </div>
+      </div>
+
+      <hr class="my-4 text-white">
+
+      <!-- Social Media -->
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 col-lg-7">
+          <p class="text-center">
+            <a href="#" class="text-white me-4"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-4"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 text-center">
+          <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+          duration: 1000, // Animation duration in ms
+          once: true // Animation happens only once
+        });
+    </script>
+</body>
+</html>
